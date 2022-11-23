@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/pic/logo.png">
+    <title>Login Page</title>
+
+    <style>
+        html {
+            height: 100%;
+
+        }
+
+        body {
+
+            height: 100%;
+            background: #0f2027;
+            background: linear-gradient(to right, #4FA095, #153462);
+            color: #fff;
+        }
+
+        div[id=main] {
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.123);
+            margin: auto;
+            margin-top: 5%;
+            width: 80%;
+            height: 85%;
+            border-radius: 10px;
+
+        }
+        .divImg {
+            position: absolute;
+            width: 30%;
+            height: 70%;
+            left:  0%;
+            top: 15%;
+            border-right: 2px rgba(240, 255, 255, 0.589) solid;
+            
+            
+        }
+
+        img {
+            position: absolute;
+            top: 25%;
+
+            width: 100%;
+            height: 50%;
+
+        }
+
+        .formDes {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            display: block;
+            width: 60%;
+            height: 90%;
+            margin: 5%;
+            left: 30%;
+            padding:1%;
+
+        }
+
+        .formInput {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            
+            font-size: 1.2rem;
+            margin-bottom:3%;
+            margin-left:3%;
+            padding: 1rem 1rem;
+            border-radius: 0.2rem;
+            background-color: rgb(255, 255, 255);
+            width: 35%;
+            border: none;
+            
+            display: inline-block;
+
+
+        }
+
+        .btnInput {
+            
+            font-family: 'Roboto', sans-serif;
+            color: azure;
+            font-size: 1.2rem;
+            border-radius: 0.2rem;
+            background-color: #1a191994;
+            border: none;
+            width: 30%;
+            padding: 15px;
+            margin-right:15%;
+            float: right;
+           
+        }
+        button:hover{
+            opacity: 0.8
+        }
+        
+         span::after{
+                    content: ' * ';
+                    color: red;
+                    }
+             
+         input:valid {
+            border: 2px green solid;
+         }
+       
+     
+        
+
+
+
+         
+        
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="divImg">
+            <img src="/pic/logo.png" alt="not found">
+        </div>
+        
+
+        <form class="formDes" action="welcome.html" target="_blank">
+            <span><input class="formInput" placeholder="First name " type="text" name="firstName" id="fName" required></span>
+            <span><input class="formInput" placeholder="Seconde name" type="text" name="secName" id="secName" required></span>
+            <span><input style="width:78% ;" class="formInput" placeholder="User Name" type="text" name="uName" id="uName" required>  </span>
+            <span><input style="width:78% ;" class="formInput" placeholder="Email" type="email" name="email" id="email" required>  </span>
+            <span><input class="formInput" placeholder="Password" type="password" name="pass" id="pass" required></span>
+            <span><input class="formInput" placeholder="Re_Password" type="password" name="repass" id="repass" required></span>
+            <span><input style="width:78% ;" class="formInput" placeholder="Birth Day" type="date" name="date" id="date" required>  </span>
+            <br>
+            <span>
+            <H3 style="margin:3%; padding:0% ; display: inline-block;">Gender :</H3>
+            <input   type="radio" name="gander" checked id="male"> <label for="male">Male</label>
+            <input   style="margin-left:10%;"type="radio" name="gander"  id="female"> <label for="female">Female</label> </span>
+            
+            <input style="width:78% ;" class="formInput" placeholder="phone" type="" name="phone" id="phone" >
+            <button class="btnInput " name="login" id="btnlogin" value="Log in"> Sign Up</button>
+            
+            
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+
+}
+.parent{
+    background-color: bisque;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width :768px){
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width :992px){
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width :1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+.header{
+    background-color: rgb(135, 80, 156);
+    
+    padding: 20px;
+    right: 15px;
+    left: 15px;
+    
+}
+.header .container{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.header .logo{
+    width:60px;
+
+}
+.header .links ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+}
+.header .links ul li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 8px;
+    margin-left: 15px;
+    background-color: rgba(135, 80, 156, 0);
+    text-decoration: none;
+ }
+ .header .links ul li a:hover{
+    opacity: 0.5;
+    background-color: rgb(97, 67, 92);
+ }
+ 
+
+/************
+ end of header 
+ *************/
+
+/* start of landing */
+.landing{
+    background-color: rgb(135, 80, 156);
+    height:400px ;
+}
+.landing h1{
+    line-height: 1.4;
+}
+.landing .bodyLanding{
+    display: flex;
+    height: 270px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 90px;
+}
+
+
+.landing p{
+    line-height: 1.7;
+}
+.titleText {
+    /* display: flex; */
+    margin: 5px;
+    color: azure;
+    text-align: center;
+    padding: 0px 10px;
+  }
+  .titleText p {
+    padding: 0px 90px;
+  }
+.landing .btnLanding{
+    background-color: #eb7d4b;
+    color: azure;
+    border: 0px;
+    border-radius: 3px;
+    padding: 15px 50px;
+}
+.btnLanding:hover{
+    opacity: 0.70;
+}
+/* end land 1 */
+/* start land 2 */
+.land2{
+    background-color: #17c2a4;
+    height: 600px;
+}
+
+.line{
+    display: block;
+    width: 70px;
+    border:  2px  solid #c8d9e5;
+    margin: auto;
+}
+.land2 h1,
+.land2 h3,
+.land3 h1,
+.land3 h3,
+.land4 h1,
+.land4 h3,
+.land5 h1,
+.land5 h5,
+.land6 h1,
+.land6 h3
+{
+    text-transform: uppercase;
+}
+.masterServices{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.services{
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+    height: 340px;
+    width: 300px;;
+}
+.services img{
+    width: 80px;
+    height: 80px;
+}
+/* end land2 */
+
+
+/* start land3
+ */
+ .land3{
+    background-color: #e7f1f8;
+    height: 700px;
+} 
+.land3 .titleText{
+    color: black
+}
+.land3 .services{
+    height: 350px;
+}
+.land3 img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.land3 h3{
+    margin: 0;
+}
+
+.land3 p.titleText{
+    padding: 0 40px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+.workPara{
+    color: #92dcff;
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+.land3 .icon{
+    color: #c8d9e5;
+}
+
+.land3 .icon i{
+    background: #878787;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    margin: auto;
+    line-height: 24px;
+    border-radius: 50%;
+    font-size: 11px;
+    color: #FFF;
+    margin: 0 7px;
+}
+ 
+ /* end land 3 teams */
+ /* start land 4 skills */
+ .land4{
+    background-color: azure;
+    height: 550px;
+    
+ }
+ .land4 .bodyLanding{
+    display: flex;
+    height: 270px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 90px;
+}
+
+ .land4 h1{
+    margin-top :0px ;
+ }
+ .land4 .titleText{
+    color:#3c4761
+ }
+ .land4 img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+}
+.land4 .services{
+    height: 280px;
+}
+/* end land 4 teams */
+ /* start land 5 skills */
+ .land5 {
+    background-color: #ffdd99;
+    height: 1050px;
+    
+ }
+ .land5 .titleText{
+    color:#393939
+ }
+ .btnProject{
+    background-color: #ebc985;
+    border-radius: 10px;
+    width: 70px;
+    height: 40px;
+    border: 0px ;
+    margin: 0px 5px;
+
+ } 
+ .btnProject:hover{
+    background-color:white; 
+ }
+ 
+.land5 .services{
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 310px;
+}
+
+.land5 .services img{
+    width: 440px;
+    height: 250px;
+}
+.land5 .btnLanding {
+    background-color: #17c2a4;
+    
+  
+}
+
+/* end land 5 skills */
+ /* start land 6 about us */
+
+
+ .land6 {
+    background-color: #d74680;
+    height: 700px;
+    
+ }
+ .land6 .titleText { 
+    color:#ffffff;
+    
+ }
+ .paraItalic{
+    font-style: italic;
+    text-align: left;
+ }
+ 
+ .land6 .services{
+    display: flex;
+    flex-direction:  column;
+    
+    width: 400px;
+    height: 200px;
+}
+.land6 .workPara{
+    color: #ea988c;
+    align-self: start; 
+    margin-left: 15px;
+}
+.land6 h3{
+    
+    align-self:flex-start;
+}
+.land6 img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+ }
+ /* end land 6 aboutus */
+ /* start land 7 contact */
+
+
+ .land7 {
+    background-color: #3c5499;
+    height: 600px;
+    
+ }
+ .land7 .titleText { 
+    color:#ffffff;
+    
+ }
+ 
+ .land7 .services{
+    display: flex;
+    flex-direction:  column;
+    height: 100px;
+}
+.land7 .services {
+    display: flex;
+    height: 100px;
+}
+.textarea{
+    height: 120px;
+    width: 600px;
+}
+
+.formInput {
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+    padding: .5rem 1rem;
+    border-radius: 0.2rem;
+    background-color: #273a71;
+    
+    border: none;
+    margin: auto;
+    display: block;
+
+
+}
+.land7 ::placeholder{
+    color:white;
+}
+
+  
+.land7 .btnLanding {
+    margin-top: 35px;
+    background-color: #30bae7;
+}
+
+
+.footer{
+    background-color: #344b8e;
+    display: flex;
+    padding: 20px;
+  
+}
+.footer .links ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    
+   
+}
+.footer .links ul li a {
+    color:white;
+    display: block;
+    padding: 8px;
+    margin-left: 15px;
+    background-color: rgba(135, 80, 156, 0);
+    text-decoration: none;
+ }
+ .footer .links ul li a:hover{
+    color:#30bae7;
+    
+ }
+
+
+
+
+ 

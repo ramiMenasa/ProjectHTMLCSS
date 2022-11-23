@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/pic/logo.png">
+    <title>Login Page</title>
+
+    <style>
+        html {
+            height: 100%;
+
+        }
+
+        body {
+
+            height: 100%;
+            background: #0f2027;
+            background: linear-gradient(to right, #4FA095, #153462);
+            color: #fff;
+        }
+
+        div[id=main] {
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.123);
+            margin: auto;
+            margin-top: 5%;
+            width: 60%;
+            height: 80%;
+            border-radius: 10px;
+            display: flex;
+
+        }
+        .divImg {
+            position: absolute;
+            width: 100%;
+            height: 40%;
+            top: 0%;
+            text-align: center;
+        }
+
+        img {
+
+            width: 30%;
+            height: 100%;
+
+        }
+
+        .formDes {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 50%;
+            top: 40%;
+
+        }
+
+        .formInput {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            font-size: 1.2rem;
+            margin-bottom: 5%;
+            padding: 1.5rem 2rem;
+            border-radius: 0.2rem;
+            background-color: rgb(255, 255, 255);
+            width: 50%;
+            border: none;
+            margin: auto;
+            display: block;
+
+
+        }
+
+        .btnInput {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            font-size: 1.2rem;
+            border-radius: 0.2rem;
+            background-color: #BAD1C2;
+            border: none;
+            width: 45%;
+            margin: auto;
+            padding: 15px;
+        }
+        .btn2Input{
+            width: 30%;
+            background-color:#1a191994;
+            color:azure;
+        }
+
+        a {
+            color: azure;
+            margin: auto;
+            padding: 0%;
+            margin-top: 0%;
+            text-decoration-line: underline;
+            text-align: center;    
+        }
+        
+        .signUp{
+            width: 100%;
+            position: absolute;
+            bottom: 3%;
+            text-align: center;
+        }
+        button:hover{
+            opacity: 0.8
+        }
+    
+
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="divImg">
+            <img src="/pic/logo.png" alt="not found">
+        </div>
+
+        <form class="formDes" action="landingPage.html" target="_blank">
+            <input class="formInput" placeholder="user name" type="text" name="userName" id="uName" required>
+            <input class="formInput" placeholder="Password" type="password" name="Password" id="uPass" required>
+            <button class="btnInput" name="login" id="btnlogin" value="Log in"> Log In</button>
+            <a href="https://www.google.com"> Forget password</a>
+            <div style="width: 38%; margin:auto"><hr></div>
+        </form>
+        <div class="signUp">
+            <form action="signUp.html" target="_blank">
+                <button class="btnInput btn2Input" name="login" id="btnlogin" value="Log in"> Sign Up</button>
+            </form>
+        </div>
+
+
+        
+
+
+    </div>
+
+</body>
+
+</html>
